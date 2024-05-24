@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculator-header">
+            <span class="menu">≡ Menu</span>
+            <span class="title">Calculator</span>
+        </div>
+        <div class="display">
+            <input type="text" id="result" disabled>
+        </div>
+        <div class="buttons">
+            <button onclick="clearDisplay()" class="button-utility">C</button>
+            <button onclick="toggleSign()" class="button-utility">+/-</button>
+            <button onclick="appendOperator('**')" class="button-utility">x²</button>
+            <button onclick="deleteLast()" class="button-utility">⌫</button>
+            <button onclick="appendNumber(7)" class="button-number">7</button>
+            <button onclick="appendNumber(8)" class="button-number">8</button>
+            <button onclick="appendNumber(9)" class="button-number">9</button>
+            <button onclick="appendOperator('*')" class="button-operator">×</button>
+            <button onclick="appendNumber(4)" class="button-number">4</button>
+            <button onclick="appendNumber(5)" class="button-number">5</button>
+            <button onclick="appendNumber(6)" class="button-number">6</button>
+            <button onclick="appendOperator('-')" class="button-operator">−</button>
+            <button onclick="appendNumber(1)" class="button-number">1</button>
+            <button onclick="appendNumber(2)" class="button-number">2</button>
+            <button onclick="appendNumber(3)" class="button-number">3</button>
+            <button onclick="appendOperator('+')" class="button-operator">+</button>
+            <button onclick="appendNumber('.')" class="button-number">.</button>
+            <button onclick="appendNumber(0)" class="button-number">0</button>
+            <button onclick="appendOperator('/')" class="button-operator">÷</button>
+            <button onclick="calculateResult()" class="button-equal">Equal to(=)</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
